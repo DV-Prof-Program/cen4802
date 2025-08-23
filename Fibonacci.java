@@ -1,4 +1,17 @@
 public class Fibonacci {
+    /**
+     * Returns the nth term of the Fibonacci sequence using recursion.
+     *
+     * <p>This method assumes the sequence is indexed starting at 0 with:
+     * <ul>
+     *   <li>F(1) = 0</li>
+     *   <li>F(2) = 1</li>
+     * </ul>
+     *
+     * @param n the position in the Fibonacci sequence to return; cannot be <= 0
+     * @return the nth Fibonacci number (for n >= 1)
+     * @throws IllegalArgumentException if n &lt;<= 0
+     */
     public static int fib(int n) {
         if (n <= 0) {
             throw new IllegalArgumentException("n must be >= 1");
